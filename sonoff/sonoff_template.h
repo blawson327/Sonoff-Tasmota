@@ -210,6 +210,7 @@ enum SupportedModules {
   ARILUX_LC11,
   SONOFF_DUAL_R2,
   ARILUX_LC06,
+  GEEKBES,
   MAXMODULE };
 
 /********************************************************************************************/
@@ -267,7 +268,8 @@ const uint8_t kNiceList[MAXMODULE] PROGMEM = {
   KMC_70011,
   AILIGHT,
   WEMOS,
-  WITTY
+  WITTY,
+  GEEKBES
 };
 
 // Default module settings
@@ -806,6 +808,21 @@ const mytmplt kModules[MAXMODULE] PROGMEM = {
      GPIO_PWM1,        // GPIO14 RGB LED Red
      GPIO_USER,        // GPIO15 RGBW LED White
      0, 0
+  },
+  { "Geekbes",         // Geekbes\CDTech (ESP8266)
+     GPIO_USER,        // GPIO00
+     0,                // GPIO01 Serial RXD and Optional sensor
+     GPIO_USER,        // GPIO02
+     0,                // GPIO03 Serial TXD and Optional sensor
+     0,                // GPIO04
+     0,                // GPIO05
+     0, 0, 0, 0, 0, 0, // Flash connection
+     GPIO_LED1,        // GPIO12 Blue LED (0 = On, 1 = Off)
+     GPIO_KEY1,        // GPIO13 Button (0 = On, 1 = Off)
+     GPIO_USER,        // GPIO14
+     GPIO_REL1,        // GPIO15 Relay
+     GPIO_USER,        // GPIO16
+     0
   }
 };
 
