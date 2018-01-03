@@ -809,11 +809,11 @@ const mytmplt kModules[MAXMODULE] PROGMEM = {
      GPIO_USER,        // GPIO15 RGBW LED White
      0, 0
   },
-  { "Geekbes",         // Geekbes\CDTech (ESP8266)
+  { "Geekbes YMWS1",         // Geekbes YM-WS-1\CDTech (ESP8266)
      GPIO_USER,        // GPIO00
-     0,                // GPIO01 Serial RXD and Optional sensor
-     GPIO_USER,        // GPIO02
-     0,                // GPIO03 Serial TXD and Optional sensor
+     0,                // GPIO01 Serial RXD
+     0,                // GPIO02
+     0,                // GPIO03 Serial TXD
      0,                // GPIO04
      0,                // GPIO05
      0, 0, 0, 0, 0, 0, // Flash connection
